@@ -1,1 +1,1 @@
-<p>Proiectul ales este Airsoft Companion</p>
+<p>Proiectul ales este Best Goods Recommender</p>
