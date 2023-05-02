@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- OWN CSS FILES-->
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <!-- END OWN CSS FILES-->
+</head>
+
+<body>
+    <h1>Remote communications - Zoom and Webex</h1>
+    <h4>
+        Existing affordances, visual variables and interaction flows in case of delivering an academic presentation.
+    </h4>
+    <p style="font-weight: bold;">Affordances</p>
+    <ol>
+        <li>Audio controls: a user can mute or unmute the microphone, select input microphone or the output speakers. Also you can mute/unmute other participants.</li>
+        <li>Video controls: a user can turn on or off his camera, select which camera to use if multiple are present, use virtual backgrounds / blur, change orientation.</li>
+        <li>Button for the participants list.</li>
+        <li>Sharing the screen: the user can share the screen with other participants, which is an important affordance for an academic presentation.</li>
+        <li>Having a reaction: a user can present a reaction -emoji- so he can interact with other users without desturbing the proffesor, for example.</li>
+        <li>Apps: integration with third party apps so the workflow is facilitated.</li>
+        <li>Whiteboards: a user can start a whiteboard, which is also important in academic presentation.</li>
+        <li>Chat: it provides the users with the posibility of communicating non-verbaly, writing in chat. For example having a question in chat so that the presenter will not be interupted.</li>
+    </ol>
+    <p style="font-weight: bold;">Visual variables</p>
+    <ol>
+        <li>Screen layout: the posibility to have the user speaking or presenting "in front", in a big picture, while the other users are listed in smaller pictures. Another possibility is to have all the users be in the gallery mode, having equal proportions.</li>
+        <li>Video quality: in very large meetings, a big chunk of data has to be rendered, so in this cases having the possibility to adjust the video quality of every participant is important.</li>
+        <li>The possibility to change the displayed name.</li>
+        <li>The possibility to share specific applications open at that time, screens, portions of the screen or whiteboards.</li>
+    </ol>
+    <p style="font-weight: bold;">Interaction flow</p>
+    <ol>
+        <li>Before-presentation: the presenter can set up the meeting details, share the meeting link, test the audio and video settings, like muting everybody on join.</li>
+        <li>During presentation: the presenter can control video and audio or the participants, can share the screen and more others. Below is a diagram of what a user's interaction flow can be (in case of Zoom). For Webex, the interaction flow is very similar.</li>
+    </ol>
+    <img src="Interaction_flow.jpg" alt="Interaction flow" width="50%" height="50%">
+
+    <h4>
+        Comparing the visual metaphors and idioms and suggesting new ones.
+    </h4>
+    <img src="Toolbox.png" alt="Toolbox" width="100%" height="100%">
+    <p>The image above is showing the bar of actions for Webex(left) and Zoom(right). The visual metaphors and idioms are fairly similar, like the mute/unmute and start/stop video butons. The same is for the share and record buttons. Webex has a quick button
+        for raising a hand, while in Zoom all the reactions are placed in the Reactions menu (so one click to raise a hand in Webex vs. 2 clicks in Zoom). Webex has a "More options" idiom, with the visual metaphor of 3 dots. For the "Exit the meeting"
+        button Webex has just a visual metaphor, meanwhile Zoom has a red button with the idiom "End". The same if for the "Apps", "Participants" and "Chat" options, Webex having just the visual metaphros, while Zoom has both idioms and visual methaphors.
+        Zoom has a "Whiteboard" option in the tools bar, while Webex has it stored in the "Share" button. All the visual metaphors and idioms are fairly similar. </p>
+    <p>For the text-only interaction part, supposing that every interaction possible with the app would be possible in text-only (for example if the user wants to open the gallery of participants a new window will appear), all the commands would be:</p>
+    <ul>
+        <li>mic_mute / mic_unnute : microphone controls</li>
+        <li>get_mic_inputs : prints the input devices for audio</li>
+        <li>set_mic_input *the device* : sets the audio input device</li>
+        <li>get_speaker_outputs : prints the output devices for audio</li>
+        <li>set_speaker_output *the device* : sets the audio output device</li>
+        <li>start_video : starts the camera</li>
+        <li>stop_video : stops the camera</li>
+        <li>get_video_devices : prints the video devices</li>
+        <li>set_video_device *the device* : sets the device used for video</li>
+        <li>print_participants : prints the participants of the meeting</li>
+        <li>to_chat : opens a new window where the chat is displayed</li>
+        <li>exit : exits the meeting</li>
+        <li>view_speaker : opens a window which visualises the video of the speaker</li>
+        <li>view_gallery : opens a window which visualises all the participant's videos</li>
+        <li>get_screen : opens a window where a screen or all the screens shared can be seen</li>
+        <li>share_screen : you share your screen so the other participants can see it</li>
+        <li>get_invite_link : prints a link of the current meeting</li>
+        <li>mute_user *username* : mutes a specific participant</li>
+        <li>mute_all : mutes all participants </li>
+        <li></li>
+    </ul>
+
+    <h4>
+        Discussing the cognitive overload in special contexts
+    </h4>
+    <p>The apps are quite easy to understand and work with, with 3 colors, pretty good idioms and visual methaphors, the menus are not having too much options and are not cascading. So, it can be said that Webex and Zoom are pretty intuitive apps.</p>
+    <p>Some special contexts where cognitive overload could appear would be when every participant has a camera on, microphone on and is sharing some content. Also, the chat is heavilly used and a normal user can't see all the messages. So it can get quite
+        annoying for a user. Both Webex and Zoom have meeting settings that can prevent most of this previously said occurences. For example, the owner of the meeting can choose if a user can share some content at all or if multiple participants can share
+        a screen at the same time. Also, the owner can mute all the participants if needed. For example Zoom has the Security menu, where the owner can set what a user can or can not do, like unmuting themselves, start their video camera or sharing content.
+        With this option, the cognitive overload can be reduced drastically for all the participants.</p>
+
+
+</body>
+
+</html>
