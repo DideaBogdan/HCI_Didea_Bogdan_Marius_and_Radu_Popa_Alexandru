@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="revised" content="2022/04/08">
+    <meta name="author" content="Marius Bogdan Didea">
+    <meta name="author" content="Radu-Alexandru Popa">
+    <meta name="description" content="Documentation for Best goods recommender">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../resources/icon.png" type="image/x-icon">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+
+    <title>Best goods manager documentation</title>
+</head>
+
+<body>
+    <h1 class="title">Best goods manager documentation</h1>
+    <div class="main">
+
+        <!-- table of contents area -->
+        <nav class="left">
+            <h3 class="subtitle">Table of contents</h3>
+            <ol>
+                <li class="toc-category"><a href="#introduction">Introduction</a></li>
+                <ol>
+                    <li><a href="#purpose" class="internal-link">Purpose</a></li>
+                    <li><a href="#conventions">Document conventions</a></li>
+                    <li><a href="#intended-audience">Intended audience and reading suggestions</a></li>
+                    <li><a href="#product-scope">Product scope</a></li>
+                    <li><a href="#references">References</a></li>
+                </ol>
+
+                <li class="toc-category"><a href="#overall-description">Overall description</a></li>
+                <ol>
+                    <li><a href="#product-perspective">Product perspective</a> </li>
+                    <li><a href="#product-functions">Product functions</a> </li>
+                    <li><a href="#user-classes">User classes and characteristics</a> </li>
+                    <li><a href="#operating-environment">Operating environment</a> </li>
+                    <li><a href="#constraints">Design and implementation constraints</a> </li>
+                    <li><a href="#user-documentation">User documentation</a> </li>
+                    <li><a href="#assumptions">Assumptions and dependencies</a> </li>
+                </ol>
+
+                <li class="toc-category"><a href="#external-requirements">External interface requirements</a></li>
+                <ol>
+                    <li><a href="#user-interfaces"> User interfaces</a></li>
+                    <li><a href="#hardware-interfaces"> Hardware interfaces</a></li>
+                    <li><a href="#software-interfaces"> Software interfaces</a></li>
+                    <li><a href="#communication-interfaces"> Communication interfaces</a></li>
+                </ol>
+                <li class="toc-category"><a href="#system-features">System features</a></li>
+                <ol>
+                  <li><a href="#feature-scan">Scanning</a></li>
+                  <li><a href="#feature-2">TODO</a></li>
+                </ol>
+                <li class="toc-category"><a href="#other-nonf-requirements">Other nonfunctional requirements</a></li>
+                <ol>
+                    <li><a href="#performance-requirements"> Performance requirements</a></li>
+                    <li><a href="#safety-requirements"> Safety requirements</a></li>
+                    <li><a href="#security-requirements"> Security requirements</a></li>
+                    <li><a href="#software-qa"> Software quality attributes</a></li>
+                    <li><a href="#business-rules"> Business rules</a></li>
+                </ol>
+                <li class="toc-category"><a href="#other-requirements">Other requirements</a></li>
+                <li class="toc-category">Appendix</li>
+            </ol>
+        </nav>
+
+        <!-- main page area -->
+        <div class="right">
+            <ol>
+                <li id="introduction" class="subcategory">Introduction</li>
+                <ol>
+                    <li id="purpose" class="subcategory">Purpose</li>
+                    &nbsp;&nbsp;&nbsp;&nbsp; The purpose of this document is to present a detailed description of the
+                    Best Goods Recommender software. It will explain the purpose and features of the software, the interfaces
+                    of the software, what the software will do and the constraints under which it must operate. This
+                    document is intended for users of the software and also potential developers.
+                    <li id="conventions" class="subcategory">Document conventions</li>
+                    &nbsp;&nbsp;&nbsp;&nbsp; This Document was created based on the IEEE template for System Requirement
+                    Specification Documents.
+                    <li id="intended-audience" class="subcategory">Intended audience</li>
+                    &nbsp;&nbsp;&nbsp;&nbsp; Anyone interested in learning more about the food they buy, what friends are buying, where to by specific items (in case of allergies), what shops have active discounts and so much more.
+                    <li id="product-scope" class="subcategory">Product scope</li>
+                    &nbsp;&nbsp;&nbsp;&nbsp; Best Goods Recommender is an application that recommends to users products they might want, information such as characteristics, price, risk factors (allergies), discounts, availability based on regional zones. The application has to be configured in order to make recommendations, by asking the user what they are planning to buy, asking them to add friends to see what they are buying, entering information about their location (country, city), preferences and potential items or categories they do not want to buy. 
+                    <li id="references" class="subcategory">References</li>
+                    &nbsp;&nbsp;&nbsp;&nbsp; <a
+                        href="https://github.com/rick4470/IEEE-SRS-Tempate">IEEE-SRS-Template</a></br>
+                </ol>
+
+                <li id="overall-description" class="subcategory">Overall description</li>
+                <ol>
+                    <li id="product-perspective" class="subcategory">Product perspective</li>
+                    &nbsp;&nbsp;&nbsp;&nbsp; BeGr is an application developed by two students of the Faculty of
+                    Informatics from Iasi, within the course "Human-Computer Interaction". The application mostly focuses on the user interface and experience side, as there is no business logic done, only the design part. We want to believe that it
+                    is a useful application for anyone curious to try something new from time to time, or for someone who want to keep in touch with the latest products or with their friends preferences.
+                    <li id="product-functions" class="subcategory">Product functions</li>
+                    My profile: </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - View account summary </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - Add location information </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - Add preferences </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - Add friends </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - See joined groups </br>
+                    Food: </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - Scan product </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - View products scanned on account </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - Create custom product </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - View friends' products </br>
+                    <li id="user-classes" class="subcategory">User classes and characteristics</li>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - Regular users, those who have the option to register, to log in, to configure their preferences, to scan new products within the application, to edit information about existing food, to create new groups pets or even to join in already existing groups. </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; - Shop personnel or authorized users are able to register new food in the application (by adding the barcode and product details). They are able to change the provided information at any time (price, shops where the product can be bought).
+                    <li id="operating-environment" class="subcategory">Operating environment</li>
+                    This is mainly a mobile application (Android and iOS), but it can also be used on Android smartwatches and smart fridges that have displays.
+                    performance statistics
+                    <li id="constraints" class="subcategory">Design and implementation constraints</li>
+                    There are no known constraints at the moment, front-end side.
+                    <li id="user-documentation" class="subcategory">User documentation</li>
+                    <li id="assumptions" class="subcategory">Assumptions and dependencies</li>
+                    The end user should be using a smartphone that supports internet connection (over WiFi or mobile network) and camera. In the case of using the application on a smart fridge, a display is mandatory.
+                </ol>
+
+                <li id="external-requirements" class="subcategory">External interface requirements</li>
+                <ol>
+                    <li id="user-interfaces" class="subcategory">User interfaces</li>
+                    <li id="software-interfaces" class="subcategory">Software interfaces</li>
+                    <!-- TODO: needed? -->
+                    <li id="communication-interfaces" class="subcategory">Communication interfaces</li>
+                </ol>
+
+                <li id="system-features" class="subcategory">System features</li>
+                <ol>
+                  <li id="feature-scan">The user can scan a product's barcode and learn about what other shops have that product in stock, its price, discounts if available, if there are any friends that have bought the product or if they recommend it. The user can then add the product to a shopping list to save it for later; afterwards, when the user enters a shop, they can select from the application the shop they entered and the application will search in the shopping lists any wanted products currently available in that shop.</li>
+                  <li id="feature-2"></li>
+                </ol>
+
+                <li id="other-nonf-requirements" class="subcategory">Other nonfunctional requirements</li>
+                <ol>
+                    <!-- TODO: needed? -->
+                    <li id="performance-requirements" class="subcategory">Performance requirements</li>
+                    <!-- TODO: needed? -->
+                    <li id="safety-requirements" class="subcategory">Safety requirements</li>
+                    <!-- TODO: needed? -->
+                    <li id="security-requirements" class="subcategory">Security requirements</li>
+                    This platform uses a registration system and certain user data is stored (name, email address,
+                    password). The searches will be safe from sql injections
+                    <li id="software-qa" class="subcategory">Software quality attributes</li>
+                    <li id="business-rules" class="subcategory">Business rules</li>
+                </ol>
+
+                <li id="other-requirements" class="subcategory">Other requirements</li>
+                <ol>
+
+                </ol>
+
+                <li class="subcategory">Appendix</li>
+                <ol>
+
+                </ol>
+            </ol>
+
+        </div>
+    </div>
+</body>
+
+</html>

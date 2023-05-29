@@ -1,0 +1,159 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	font-family: "Noticia Text", serif;
+	font-size: large;
+}
+
+:root {
+	--sidebar: rgb(129, 194, 169);
+	--aqua: rgb(4, 178, 217);
+	--background: rgb(53, 110, 156);
+	--orange: rgb(242, 149, 68);
+	--textcolor: rgb(6, 14, 27);
+}
+
+html {
+	background-color: var(--background);
+}
+
+.main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.left {
+	width: 15%;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	left: 0;
+	margin-left: 2%;
+	align-self: flex-start;
+	margin-right: 10px;
+	font-size: large;
+	color: var(--textcolor);
+	background-color: var(--sidebar);
+	border-radius: 10px;
+}
+
+.left li {
+	margin-bottom: 1%;
+}
+
+.right {
+	width: 85%;
+	margin-right: 2%;
+	text-align: justify;
+	color: var(--textcolor);
+}
+
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+
+li {
+	padding: 3px 0;
+	padding-left: 5%;
+}
+
+.right li {
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--textcolor);
+}
+
+a:visited {
+	color: var(--textcolor);
+}
+
+a:hover {
+	color: var(--aqua);
+	transition: color 125ms;
+}
+
+.internal-link:hover {
+	text-decoration: underline var(--aqua) dotted;
+}
+
+tbody tr:nth-child(2n + 1) {
+	background: var(--orange);
+}
+
+th {
+	width: 20%;
+}
+
+.title {
+	text-align: center;
+	margin: 2% 0%;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+}
+
+.subtitle {
+	text-align: center;
+	font-style: italic;
+	font-family: "Open Sans", sans-serif;
+}
+
+.subcategory {
+	font-size: 25px;
+	margin-top: 1%;
+	font-family: "Open Sans", sans-serif;
+}
+
+li {
+	display: block;
+}
+
+ol ol {
+	padding-left: 10px;
+}
+
+ol {
+	counter-reset: item;
+}
+
+li:before {
+	content: counters(item, ".") " ";
+	counter-increment: item;
+}
+
+.subcategory + p {
+	padding-left: 1rem;
+}
+
+div.image_place {
+	padding: 5vh 0vh;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/* responsive items */
+
+@media (max-width: 1000px) {
+	.main {
+		flex-direction: column;
+	}
+	.left {
+		position: relative;
+		width: 100%;
+	}
+	.left li {
+		display: flex;
+		flex-direction: row;
+	}
+	.right {
+		width: 100%;
+	}
+	.right ol {
+		margin-right: 5px;
+	}
+}
