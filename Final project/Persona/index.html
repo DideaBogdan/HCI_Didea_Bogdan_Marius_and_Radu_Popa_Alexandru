@@ -1,400 +1,639 @@
 <!DOCTYPE html>
 <html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="publisher" content="blankdots.com" />
+		<meta name="author" content="Stefan Negru" />
+		<meta name="keywords" content="personas, template" />
+		<meta name="description" content="Personas Template with microdata" />
+		<meta name="robots" content="noindex,nofollow" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Personas Template</title>
+	</head>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="publisher" content="blankdots.com" />
-    <meta name="author" content="Stefan Negru" />
-    <meta name="keywords" content="personas, template" />
-    <meta name="description" content="Personas Template with microdata" />
-    <meta name="robots" content="noindex,nofollow" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Personas Template</title>
-</head>
+	<body>
+		<header>
+			<h1>Personas Template</h1>
+			<span id="logo"
+				><a href="http://www.w3.org/html/logo/">
+					<img
+						src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
+						width="83"
+						height="32"
+						alt="HTML5 Powered with CSS3 / Styling, and Semantics"
+						title="HTML5 Powered with CSS3 / Styling, and Semantics"
+					/> </a
+			></span>
+		</header>
+		<section>
+			<h1 class="hidden">Personas Section (minimum 4 personas recommended)</h1>
+			<article itemscope itemtype="http://schema.org/Person" class="persona">
+				<div class="personaInfo">
+					<h3>Type: Customer</h3>
+					<figure>
+						<img itemprop="image" src="res/young_child.jpg" alt="persona image" width="150px" />
+					</figure>
+					<div class="personaBackground">
+						<h4>Name: <span itemprop="givenName">Alex</span> <span itemprop="familyName">Popescu</span></h4>
+						<h5>Background</h5>
+						<ul>
+							<li>
+								<strong>Date of Birth:</strong>
+								<time itemprop="birthDate" datetime="1990-10-23">30-04-2006</time>
+							</li>
+							<li><strong>Gender:</strong> <span itemprop="gender">Male</span></li>
+							<li itemprop="location" itemscope itemtype="http://schema.org/Place">
+								<strong>Location:</strong> <span itemprop="name">Iasi, Romania</span>
+							</li>
+							<li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+								<strong>Work place:</strong> <span itemprop="name">-</span>
+							</li>
+							<li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+								<strong>School:</strong> <span itemprop="name">Școala Generală Ion Simionescu</span>
+							</li>
+							<li></li>
+							<li><strong>Technology Level:</strong> low</li>
+						</ul>
+					</div>
+				</div>
+				<div class="personaDetails">
+					<div class="detailsLeft">
+						<div class="leftGroup">
+							<h5>Main Points</h5>
+							<ul>
+								<li>He has never used any software application before</li>
+								<li>Very social person at school, but struggles to keep up technology-wise.</li>
+								<li>He aims to become healthier and to learn how to use mobile devices.</li>
+							</ul>
+						</div>
+						<div class="leftGroup">
+							<h5>Goals</h5>
+							<ul>
+								<li>Practical Goals:</li>
+								<p>
+									Alex wants to grow more accustomed to technology and use it on a day to day basis.
+									Coming from a poor family, living with his older sisters in the countryside,
+									anything tech related is very out of reach for him.
+								</p>
+								<li>Personal Goals:</li>
+								<p>
+									As his parents have told him numerous times before, his diet has to change for the
+									better and so he wants to drop any misconceptions about certain food categories
+									(such as fish or raw vegetables) and also to improve his diet, leading to a
+									healthier lifestyle.
+								</p>
+							</ul>
+						</div>
+						<div class="leftGroup">
+							<h5>Frustrations and Pain Points</h5>
+							<ul>
+								<li>
+									The UI colors don't feel very attractive, maybe they are meant for an older age
+									group and not so much for kids.
+								</li>
+								<li>
+									He has always avoided trying new kinds of food out of fear that he might not enjoy
+									it
+								</li>
+								<li>
+									Overall the user experience can be improved, it is slightly difficult to navigate
+									the main screen when you want to do a certain thing, for example to see what your
+									friends are doing.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div itemprop="description" class="detailsRight">
+						<h5>Detailed Description</h5>
+						<p>
+							Alex is an enthusiastic and curious child. They are eager to learn and try new things. Alex
+							is open-minded and willing to embrace new experiences. They have a caring nature and enjoy
+							helping others. They have a vivid imagination and enjoy storytelling and playing
+							make-believe games.
+						</p>
+						<p>
+							Alex's parents have recently realized that their child's diet has been quite limited,
+							consisting mostly of a few staple foods. Concerned about their child's nutrition and wanting
+							to broaden their palate, they have decided to introduce him to a mobile application that
+							recommends various products and dietary choices for anyone including children.
+						</p>
+						<ul>
+							<li>
+								As a child that has lived his entire life in the countryside, he wants to familiarize
+								himself with the technological advancements so that he can more easily find help for
+								himself in the future and also communicate online with his classmates.
+							</li>
+							<li>
+								As a picky eater, he wants to try from time to time to eat more diverse food and learn
+								more about it: how to cook it and where to find the prime ingredients.
+							</li>
+						</ul>
+						<h5>References</h5>
+						<ul>
+							<li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
+							<li>
+								An introduction to personas and
+								<a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;
+							</li>
+							<li itemscope itemtype="http://schema.org/Book">
+								<span itemprop="name"
+									><a
+										href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1"
+										class="external-link"
+										rel="nofollow"
+										>The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a
+									></span
+								>, <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;
+							</li>
+							<li>
+								This version of Personas Template includes microdata markup using
+								<a href="schema.org/">schema.org Schemas</a>.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="personaScenarios">
+					<h5>Scenarios</h5>
+					<ul>
+						<li>
+							Whenever Alex selects a food item, the application provides nutritional information,
+							including the benefits and potential allergies or sensitivities. Alex enjoys looking at the
+							pictures of different meals and recipes suggested by the app.
+						</li>
+						<li>
+							As Alex starts trying new foods, the application allows him to record his experiences and
+							rate the items they have tried. He also has the option to save the items, which helps him
+							remember which foods he enjoyed the most and which ones he would like to try again in the
+							future. Through the application, Alex not only learns about nutrition but also gains an
+							appreciation for the variety of flavors and textures available in different foods.
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article itemscope itemtype="http://schema.org/Person" class="persona">
+				<div class="personaInfo">
+					<h3>Type: Customer</h3>
+					<figure>
+						<img itemprop="image" src="res/old_lady.jpg" alt="persona image" width="150px" />
+					</figure>
+					<div class="personaBackground">
+						<h4>
+							Name: <span itemprop="givenName">Gabriela</span>
+							<span itemprop="familyName">Conache</span>
+						</h4>
+						<h5>Background</h5>
+						<ul>
+							<li>
+								<strong>Date of Birth:</strong>
+								<time itemprop="birthDate" datetime="1990-10-23">03-12-1958</time>
+							</li>
+							<li><strong>Gender:</strong> <span itemprop="gender">Female</span></li>
+							<li itemprop="location" itemscope itemtype="http://schema.org/Place">
+								<strong>Location:</strong> <span itemprop="name">Iasi, Romania</span>
+							</li>
+							<li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+								<strong>Work place:</strong> <span itemprop="name">retired</span>
+							</li>
+							<li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+								<strong>School:</strong>
+								<span itemprop="name">Universitatea de Medicină și Farmacie </span>
+							</li>
+							<li><strong>Technology Level:</strong> low-medium</li>
+						</ul>
+					</div>
+				</div>
+				<div class="personaDetails">
+					<div class="detailsLeft">
+						<div class="leftGroup">
+							<h5>Main Points</h5>
+							<ul>
+								<li>
+									Moderate experience with technology, no experience with food recommending
+									applications
+								</li>
+								<li>She is planning to add her nephews as friends in the application so they can enjoy healthier habits together</li>
+							</ul>
+						</div>
+						<div class="leftGroup">
+							<h5>Goals</h5>
+							<p>Goals are the reasons users perform tasks, not the tasks.</p>
+							<ul>
+								<li>She wants to maintain healthy blood sugar levels</li>
+								<li>She wants to expand her culinary skills</li>
+							</ul>
+						</div>
+						<div class="leftGroup">
+							<h5>Frustrations and Pain Points</h5>
+							<p>Some of the difficulties the user has with the product.</p>
+							<ul>
+								<li>
+									Gabriela may experience frustrations if the application has a limited database of
+									diabetes-friendly foods and recipes. If the app does not offer a wide variety of
+									options or fails to update its content regularly, Gabriela may find it challenging
+									to maintain a diverse and interesting diet. This limitation could lead to monotony
+									and decreased motivation to use the app consistently.
+								</li>
+								<li>
+									Accurate and up-to-date nutritional information is crucial for Gabriela's diabetes
+									management. If the application provides incomplete or incorrect nutritional data for
+									certain foods, it can be both frustrating and potentially harmful to her health.
+									Gabriela relies on the app to make informed decisions about her dietary choices, so
+									any inconsistencies or inaccuracies may undermine her trust in the application.
+								</li>
+								<li>
+									If the application does not effectively personalize its recommendations based on
+									Gabriela's specific needs and preferences, she may find it challenging to
+									incorporate the app's suggestions into her daily routine. A one-size-fits-all
+									approach may not cater to her individual requirements, making it difficult for
+									Gabriela to align her dietary choices with her diabetes management plan.;
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div itemprop="description" class="detailsRight">
+						<h5>Detailed Description</h5>
+						<p>
+							Gabriela enjoys spending time with her family, reading books, gardening, and staying active
+							through gentle exercises like walking and yoga. She is also passionate about cooking and
+							trying out new recipes.
+						</p>
+						<p>
+							Gabriela is a warm-hearted and independent individual. She values her health and strives to
+							maintain a balanced lifestyle. She is a quick learner and embraces technology with the help
+							of her tech-savvy nephews. Gabriela is determined and proactive when it comes to managing
+							her diabetes, and she is motivated to make positive changes to her diet and overall
+							well-being.
+						</p>
+						<p>
+							She recently retired and has been diagnosed with diabetes. Realizing the importance of
+							maintaining a healthy diet to manage her condition, she decided to explore the world of
+							mobile applications to help her make informed choices. Her nephews, who are well-versed in
+							technology, have assisted her in finding and setting up an application that recommends
+							products, including dietary recommendations tailored to her needs.
+						</p>
+						<ul>
+							<li>
+								She wants to consistently maintain healthy blood sugar levels within the recommended
+								range. This goal would involve regularly monitoring her blood sugar levels, adhering to
+								her prescribed medication or insulin regimen, and making well-informed food choices
+								based on the application's recommendations.
+							</li>
+							<li>
+								A personal goal could be to expand her culinary skills and explore a variety of
+								diabetes-friendly recipes. She could aim to try at least one new recipe each week from
+								the application's collection, experimenting with different flavors and ingredients. This
+								goal would not only make her meals more enjoyable but also boost her confidence in
+								managing her diabetes through delicious and nutritious home-cooked meals.
+							</li>
+							<li>Business Goals like: increasing student enrollment, getting good education.</li>
+						</ul>
+						<p>Prior experience:</p>
+						<ul>
+							<li>
+								Somewhat accustomed to mobile applications, she knows how to navigate the screens and
+								stays sharp about the latest news.
+							</li>
+						</ul>
+						<h5>References</h5>
+						<ul>
+							<li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
+							<li>
+								An introduction to personas and
+								<a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;
+							</li>
+							<li itemscope itemtype="http://schema.org/Book">
+								<span itemprop="name"
+									><a
+										href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1"
+										class="external-link"
+										rel="nofollow"
+										>The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a
+									></span
+								>, <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;
+							</li>
+							<li>
+								This version of Personas Template includes microdata markup using
+								<a href="schema.org/">schema.org Schemas</a>.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="personaScenarios">
+					<h5>Scenarios</h5>
+					<p>
+						As Gabriela continues using the application, she notices positive changes in her overall health.
+						She feels more confident in her ability to make informed food choices and manages her diabetes
+						effectively. The app becomes a valuable tool in her daily life, providing ongoing support and
+						guidance.
+					</p>
+				</div>
+			</article>
+			<article itemscope itemtype="http://schema.org/Person" class="persona">
+				<div class="personaInfo">
+					<h3>Type: Primary/Secondary/Negative/Supplemental/Served/Customer</h3>
+					<figure>
+						<img itemprop="image" src="http://placehold.it/150x150" alt="persona image" />
+					</figure>
+					<div class="personaBackground">
+						<h4>
+							Name: <span itemprop="givenName">FirstName</span>
+							<span itemprop="familyName">LastName</span>
+						</h4>
+						<h5>Background</h5>
+						<ul>
+							<li>
+								<strong>Date of Birth:</strong>
+								<time itemprop="birthDate" datetime="1990-10-23">10/23/1990</time>
+							</li>
+							<li><strong>Gender:</strong> <span itemprop="gender">Male/Female</span></li>
+							<li itemprop="location" itemscope itemtype="http://schema.org/Place">
+								<strong>Location:</strong> <span itemprop="name">Iasi, Romania</span>
+							</li>
+							<li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+								<strong>Work place:</strong> <span itemprop="name">Organization Name</span>,
+								<span itemprop="jobTitle">Engineer</span>
+							</li>
+							<li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+								<strong>School:</strong> <span itemprop="name">Palo Alto High School</span> (if
+								required)
+							</li>
+							<li><strong>Technology Level:</strong>(if required)</li>
+						</ul>
+					</div>
+				</div>
+				<div class="personaDetails">
+					<div class="detailsLeft">
+						<div class="leftGroup">
+							<h5>Main Points</h5>
+							<p>
+								Some points extracted from detailed description, that are specific for this persona and
+								the reason we chose it. For example
+								<strong>(phrases are recommended not just simple list of points)</strong>:
+							</p>
+							<ul>
+								<li>Experience with certain products;</li>
+								<li>Dislikes about certain aspects;</li>
+								<li>Disabilities relevant to our research;</li>
+								<li>Working environment;</li>
+								<li>Social connections;</li>
+								<li>The user's goals.</li>
+							</ul>
+						</div>
+						<div class="leftGroup">
+							<h5>Goals</h5>
+							<p>Goals are the reasons users perform tasks, not the tasks.</p>
+							<ul>
+								<li>Practical Goals:</li>
+								<li>Personal Goals:</li>
+								<li>Business Goals:</li>
+							</ul>
+						</div>
+						<div class="leftGroup">
+							<h5>Frustrations and Pain Points</h5>
+							<p>Some of the difficulties the user has with the product.</p>
+							<ul>
+								<li>UI, Interaction, User Experience;</li>
+								<li>Dislikes relevant to the research;</li>
+								<li>Disabilities;</li>
+								<li>Unreliability of the product;</li>
+								<li>Difficulties in completing tasks;</li>
+								<li>Problems with the product: slowness, hard to use, no feedback provided;</li>
+							</ul>
+						</div>
+					</div>
+					<div itemprop="description" class="detailsRight">
+						<h5>Detailed Description</h5>
+						<p>
+							<strong
+								>"A persona is a user archetype you can use to help guide decisions about product
+								features, navigation, interactions, and even visual design." (Kim Goodwin,
+								Cooper.com)</strong
+							>
+						</p>
+						<p>
+							Regarding the persona type: Primary/Secondary/Negative/Supplemental/Served/Customer, these
+							categories of personas are defined in
+							<span itemscope itemtype="http://schema.org/Book"
+								><span itemprop="name"
+									><a
+										href="http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/"
+										>About Face 3.0</a
+									></span
+								>
+								by <span itemprop="author">Alan Cooper</span></span
+							>.
+						</p>
+						<p>
+							A few personal details regarding relationship to the application domain in which we will use
+							the personas, work life, social life, teamwork etc.
+						</p>
+						<p><strong>This section should be structured as a story.</strong></p>
+						<p>Regarding selecting goals it is recommended to be dived into:</p>
+						<ul>
+							<li>Practical Goals like: avoid meetings, being efficient;</li>
+							<li>
+								Personal Goals like: not feeling stupid (the product insults the user), getting an
+								adequate amount of work done, having fun;
+							</li>
+							<li>Business Goals like: increasing student enrollment, getting good education.</li>
+						</ul>
+						<p>List any prior experience that is relevant to the persona</p>
+						<ul>
+							<li>Experience with certain applications, products;</li>
+							<li>Frequency of use.</li>
+						</ul>
+						<h5>References</h5>
+						<ul>
+							<li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
+							<li>
+								An introduction to personas and
+								<a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;
+							</li>
+							<li itemscope itemtype="http://schema.org/Book">
+								<span itemprop="name"
+									><a
+										href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1"
+										class="external-link"
+										rel="nofollow"
+										>The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a
+									></span
+								>, <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;
+							</li>
+							<li>
+								This version of Personas Template includes microdata markup using
+								<a href="schema.org/">schema.org Schemas</a>.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="personaScenarios">
+					<h5>Scenarios</h5>
+					<p>
+						Develop and list a few scenarios in which your product is used (when, how and with whom it is
+						used) by this persona. In developing these scenarios consider the Main points, Goals and
+						Frustrations &amp; Pain Points. Describe the scenario in a few phrases and also establish a few
+						end points. Images could be used to describe the scenarios.
+					</p>
+				</div>
+			</article>
+			<article itemscope itemtype="http://schema.org/Person" class="persona">
+				<div class="personaInfo">
+					<h3>Type: Primary/Secondary/Negative/Supplemental/Served/Customer</h3>
+					<figure>
+						<img itemprop="image" src="http://placehold.it/150x150" alt="persona image" />
+					</figure>
+					<div class="personaBackground">
+						<h4>
+							Name: <span itemprop="givenName">FirstName</span>
+							<span itemprop="familyName">LastName</span>
+						</h4>
+						<h5>Background</h5>
+						<ul>
+							<li>
+								<strong>Date of Birth:</strong>
+								<time itemprop="birthDate" datetime="1990-10-23">10/23/1990</time>
+							</li>
+							<li><strong>Gender:</strong> <span itemprop="gender">Male/Female</span></li>
+							<li itemprop="location" itemscope itemtype="http://schema.org/Place">
+								<strong>Location:</strong> <span itemprop="name">Iasi, Romania</span>
+							</li>
+							<li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+								<strong>Work place:</strong> <span itemprop="name">Organization Name</span>,
+								<span itemprop="jobTitle">Engineer</span>
+							</li>
+							<li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+								<strong>School:</strong> <span itemprop="name">Palo Alto High School</span> (if
+								required)
+							</li>
+							<li><strong>Technology Level:</strong>(if required)</li>
+						</ul>
+					</div>
+				</div>
+				<div class="personaDetails">
+					<div class="detailsLeft">
+						<div class="leftGroup">
+							<h5>Main Points</h5>
+							<p>
+								Some points extracted from detailed description, that are specific for this persona and
+								the reason we chose it. For example
+								<strong>(phrases are recommended not just simple list of points)</strong>:
+							</p>
+							<ul>
+								<li>Experience with certain products;</li>
+								<li>Dislikes about certain aspects;</li>
+								<li>Disabilities relevant to our research;</li>
+								<li>Working environment;</li>
+								<li>Social connections;</li>
+								<li>The user's goals.</li>
+							</ul>
+						</div>
+						<div class="leftGroup">
+							<h5>Goals</h5>
+							<p>Goals are the reasons users perform tasks, not the tasks.</p>
+							<ul>
+								<li>Practical Goals:</li>
+								<li>Personal Goals:</li>
+								<li>Business Goals:</li>
+							</ul>
+						</div>
+						<div class="leftGroup">
+							<h5>Frustrations and Pain Points</h5>
+							<p>Some of the difficulties the user has with the product.</p>
+							<ul>
+								<li>UI, Interaction, User Experience;</li>
+								<li>Dislikes relevant to the research;</li>
+								<li>Disabilities;</li>
+								<li>Unreliability of the product;</li>
+								<li>Difficulties in completing tasks;</li>
+								<li>Problems with the product: slowness, hard to use, no feedback provided;</li>
+							</ul>
+						</div>
+					</div>
+					<div itemprop="description" class="detailsRight">
+						<h5>Detailed Description</h5>
+						<p>
+							<strong
+								>"A persona is a user archetype you can use to help guide decisions about product
+								features, navigation, interactions, and even visual design." (Kim Goodwin,
+								Cooper.com)</strong
+							>
+						</p>
+						<p>
+							Regarding the persona type: Primary/Secondary/Negative/Supplemental/Served/Customer, these
+							categories of personas are defined in
+							<span itemscope itemtype="http://schema.org/Book"
+								><span itemprop="name"
+									><a
+										href="http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/"
+										>About Face 3.0</a
+									></span
+								>
+								by <span itemprop="author">Alan Cooper</span></span
+							>.
+						</p>
+						<p>
+							A few personal details regarding relationship to the application domain in which we will use
+							the personas, work life, social life, teamwork etc.
+						</p>
+						<p><strong>This section should be structured as a story.</strong></p>
+						<p>Regarding selecting goals it is recommended to be dived into:</p>
+						<ul>
+							<li>Practical Goals like: avoid meetings, being efficient;</li>
+							<li>
+								Personal Goals like: not feeling stupid (the product insults the user), getting an
+								adequate amount of work done, having fun;
+							</li>
+							<li>Business Goals like: increasing student enrollment, getting good education.</li>
+						</ul>
+						<p>List any prior experience that is relevant to the persona</p>
+						<ul>
+							<li>Experience with certain applications, products;</li>
+							<li>Frequency of use.</li>
+						</ul>
+						<h5>References</h5>
+						<ul>
+							<li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
+							<li>
+								An introduction to personas and
+								<a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;
+							</li>
+							<li itemscope itemtype="http://schema.org/Book">
+								<span itemprop="name"
+									><a
+										href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1"
+										class="external-link"
+										rel="nofollow"
+										>The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a
+									></span
+								>, <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;
+							</li>
+							<li>
+								This version of Personas Template includes microdata markup using
+								<a href="schema.org/">schema.org Schemas</a>.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="personaScenarios">
+					<h5>Scenarios</h5>
+					<p>
+						Develop and list a few scenarios in which your product is used (when, how and with whom it is
+						used) by this persona. In developing these scenarios consider the Main points, Goals and
+						Frustrations &amp; Pain Points. Describe the scenario in a few phrases and also establish a few
+						end points. Images could be used to describe the scenarios.
+					</p>
+				</div>
+			</article>
+		</section>
 
-<body>
-    <header>
-        <h1>Personas Template</h1>
-        <span id="logo"><a href="http://www.w3.org/html/logo/">
-<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="83" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
-</a></span>
-
-    </header>
-    <section>
-        <h1 class="hidden">Personas Section (minimum 4 personas recommended)</h1>
-        <article itemscope itemtype="http://schema.org/Person" class="persona">
-            <div class="personaInfo">
-                <h3>Type: Primary/Secondary/Negative/Supplemental/Served/Customer</h3>
-                <figure>
-                    <img itemprop="image" src="http://placehold.it/150x150" alt="persona image" />
-                </figure>
-                <div class="personaBackground">
-                    <h4>Name: <span itemprop="givenName">FirstName</span> <span itemprop="familyName">LastName</span></h4>
-                    <h5>Background</h5>
-                    <ul>
-                        <li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1990-10-23">10/23/1990</time></li>
-                        <li><strong>Gender:</strong> <span itemprop="gender">Male/Female</span></li>
-                        <li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
-                        <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Organization Name</span>, <span itemprop="jobTitle">Engineer</span></li>
-                        <li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong> <span itemprop="name">Palo Alto High School</span> (if required)</li>
-                        <li><strong>Technology Level:</strong>(if required)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personaDetails">
-                <div class="detailsLeft">
-                    <div class="leftGroup">
-                        <h5>Main Points</h5>
-                        <p>Some points extracted from detailed description, that are specific for this persona and the reason we chose it. For example <strong>(phrases are recommended not just simple list of points)</strong>:</p>
-                        <ul>
-                            <li>Experience with certain products;</li>
-                            <li>Dislikes about certain aspects;</li>
-                            <li>Disabilities relevant to our research;</li>
-                            <li>Working environment;</li>
-                            <li>Social connections;</li>
-                            <li>The user's goals.</li>
-                        </ul>
-                    </div>
-                    <div class="leftGroup">
-                        <h5>Goals</h5>
-                        <p>Goals are the reasons users perform tasks, not the tasks.</p>
-                        <ul>
-                            <li>Practical Goals:</li>
-                            <li>Personal Goals:</li>
-                            <li>Business Goals:</li>
-                        </ul>
-                    </div>
-                    <div class="leftGroup">
-                        <h5>Frustrations and Pain Points</h5>
-                        <p>Some of the difficulties the user has with the product.</p>
-                        <ul>
-                            <li>UI, Interaction, User Experience;</li>
-                            <li>Dislikes relevant to the research;</li>
-                            <li>Disabilities;</li>
-                            <li>Unreliability of the product;</li>
-                            <li>Difficulties in completing tasks;</li>
-                            <li>Problems with the product: slowness, hard to use, no feedback provided;</li>
-                        </ul>
-                    </div>
-                </div>
-                <div itemprop="description" class="detailsRight">
-                    <h5>Detailed Description</h5>
-                    <p><strong>"A persona is a user archetype you can use to help guide decisions about product features, navigation, interactions, and even visual design." (Kim Goodwin, Cooper.com)</strong></p>
-                    <p>Regarding the persona type: Primary/Secondary/Negative/Supplemental/Served/Customer, these categories of personas are defined in <span itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/">About Face 3.0</a></span>                        by <span itemprop="author">Alan Cooper</span></span>.</p>
-                    <p>A few personal details regarding relationship to the application domain in which we will use the personas, work life, social life, teamwork etc.</p>
-                    <p><strong>This section should be structured as a story.</strong></p>
-                    <p>Regarding selecting goals it is recommended to be dived into:</p>
-                    <ul>
-                        <li>Practical Goals like: avoid meetings, being efficient;</li>
-                        <li>Personal Goals like: not feeling stupid (the product insults the user), getting an adequate amount of work done, having fun;</li>
-                        <li>Business Goals like: increasing student enrollment, getting good education.</li>
-                    </ul>
-                    <p>List any prior experience that is relevant to the persona </p>
-                    <ul>
-                        <li>Experience with certain applications, products;</li>
-                        <li>Frequency of use.</li>
-                    </ul>
-                    <h5>References</h5>
-                    <ul>
-                        <li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
-                        <li>An introduction to personas and <a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;</li>
-                        <li itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1" class="external-link" rel="nofollow">The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a></span>,
-                            <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;</li>
-                        <li>This version of Personas Template includes microdata markup using <a href="schema.org/">schema.org Schemas</a>.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personaScenarios">
-                <h5>Scenarios</h5>
-                <p>Develop and list a few scenarios in which your product is used (when, how and with whom it is used) by this persona. In developing these scenarios consider the Main points, Goals and Frustrations &amp; Pain Points. Describe the scenario
-                    in a few phrases and also establish a few end points. Images could be used to describe the scenarios. </p>
-            </div>
-            <div class="otherDetails">
-                <h5>Other Details</h5>
-                <p>Other details regarding this persona.</p>
-            </div>
-        </article>
-        <article itemscope itemtype="http://schema.org/Person" class="persona">
-            <div class="personaInfo">
-                <h3>Type: Primary/Secondary/Negative/Supplemental/Served/Customer</h3>
-                <figure>
-                    <img itemprop="image" src="http://placehold.it/150x150" alt="persona image" />
-                </figure>
-                <div class="personaBackground">
-                    <h4>Name: <span itemprop="givenName">FirstName</span> <span itemprop="familyName">LastName</span></h4>
-                    <h5>Background</h5>
-                    <ul>
-                        <li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1990-10-23">10/23/1990</time></li>
-                        <li><strong>Gender:</strong> <span itemprop="gender">Male/Female</span></li>
-                        <li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
-                        <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Organization Name</span>, <span itemprop="jobTitle">Engineer</span></li>
-                        <li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong> <span itemprop="name">Palo Alto High School</span> (if required)</li>
-                        <li><strong>Technology Level:</strong> (if required)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personaDetails">
-                <div class="detailsLeft">
-                    <div class="leftGroup">
-                        <h5>Main Points</h5>
-                        <p>Some points extracted from detailed description, that are specific for this persona and the reason we chose it. For example <strong>(phrases are recommended not just simple list of points)</strong>:</p>
-                        <ul>
-                            <li>Experience with certain products;</li>
-                            <li>Dislikes about certain aspects;</li>
-                            <li>Disabilities relevant to our research;</li>
-                            <li>Working environment;</li>
-                            <li>Social connections;</li>
-                            <li>The user's goals.</li>
-                        </ul>
-                    </div>
-                    <div class="leftGroup">
-                        <h5>Goals</h5>
-                        <p>Goals are the reasons users perform tasks, not the tasks.</p>
-                        <ul>
-                            <li>Practical Goals:</li>
-                            <li>Personal Goals:</li>
-                            <li>Business Goals:</li>
-                        </ul>
-                    </div>
-                    <div class="leftGroup">
-                        <h5>Frustrations and Pain Points</h5>
-                        <p>Some of the difficulties the user has with the product.</p>
-                        <ul>
-                            <li>UI, Interaction, User Experience;</li>
-                            <li>Dislikes relevant to the research;</li>
-                            <li>Disabilities;</li>
-                            <li>Unreliability of the product;</li>
-                            <li>Difficulties in completing tasks;</li>
-                            <li>Problems with the product: slowness, hard to use, no feedback provided;</li>
-                        </ul>
-                    </div>
-                </div>
-                <div itemprop="description" class="detailsRight">
-                    <h5>Detailed Description</h5>
-                    <p><strong>"A persona is a user archetype you can use to help guide decisions about product features, navigation, interactions, and even visual design." (Kim Goodwin, Cooper.com)</strong></p>
-                    <p>Regarding the persona type: Primary/Secondary/Negative/Supplemental/Served/Customer, these categories of personas are defined in <span itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/">About Face 3.0</a></span>                        by <span itemprop="author">Alan Cooper</span></span>.</p>
-                    <p>A few personal details regarding relationship to the application domain in which we will use the personas, work life, social life, teamwork etc.</p>
-                    <p><strong>This section should be structured as a story.</strong></p>
-                    <p>Regarding selecting goals it is recommended to be dived into:</p>
-                    <ul>
-                        <li>Practical Goals like: avoid meetings, being efficient;</li>
-                        <li>Personal Goals like: not feeling stupid (the product insults the user), getting an adequate amount of work done, having fun;</li>
-                        <li>Business Goals like: increasing student enrollment, getting good education.</li>
-                    </ul>
-                    <p>List any prior experience that is relevant to the persona </p>
-                    <ul>
-                        <li>Experience with certain applications, products;</li>
-                        <li>Frequency of use.</li>
-                    </ul>
-                    <h5>References</h5>
-                    <ul>
-                        <li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
-                        <li>An introduction to personas and <a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;</li>
-                        <li itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1" class="external-link" rel="nofollow">The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a></span>,
-                            <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;</li>
-                        <li>This version of Personas Template includes microdata markup using <a href="schema.org/">schema.org Schemas</a>.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personaScenarios">
-                <h5>Scenarios</h5>
-                <p>Develop and list a few scenarios in which your product is used (when, how and with whom it is used) by this persona. In developing these scenarios consider the Main points, Goals and Frustrations &amp; Pain Points. Describe the scenario
-                    in a few phrases and also establish a few end points. Images could be used to describe the scenarios. </p>
-            </div>
-            <div class="otherDetails">
-                <h5>Other Details</h5>
-                <p>Other details regarding this persona.</p>
-            </div>
-        </article>
-        <article itemscope itemtype="http://schema.org/Person" class="persona">
-            <div class="personaInfo">
-                <h3>Type: Primary/Secondary/Negative/Supplemental/Served/Customer</h3>
-                <figure>
-                    <img itemprop="image" src="http://placehold.it/150x150" alt="persona image" />
-                </figure>
-                <div class="personaBackground">
-                    <h4>Name: <span itemprop="givenName">FirstName</span> <span itemprop="familyName">LastName</span></h4>
-                    <h5>Background</h5>
-                    <ul>
-                        <li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1990-10-23">10/23/1990</time></li>
-                        <li><strong>Gender:</strong> <span itemprop="gender">Male/Female</span></li>
-                        <li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
-                        <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Organization Name</span>, <span itemprop="jobTitle">Engineer</span></li>
-                        <li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong> <span itemprop="name">Palo Alto High School</span> (if required)</li>
-                        <li><strong>Technology Level:</strong>(if required)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personaDetails">
-                <div class="detailsLeft">
-                    <div class="leftGroup">
-                        <h5>Main Points</h5>
-                        <p>Some points extracted from detailed description, that are specific for this persona and the reason we chose it. For example <strong>(phrases are recommended not just simple list of points)</strong>:</p>
-                        <ul>
-                            <li>Experience with certain products;</li>
-                            <li>Dislikes about certain aspects;</li>
-                            <li>Disabilities relevant to our research;</li>
-                            <li>Working environment;</li>
-                            <li>Social connections;</li>
-                            <li>The user's goals.</li>
-                        </ul>
-                    </div>
-                    <div class="leftGroup">
-                        <h5>Goals</h5>
-                        <p>Goals are the reasons users perform tasks, not the tasks.</p>
-                        <ul>
-                            <li>Practical Goals:</li>
-                            <li>Personal Goals:</li>
-                            <li>Business Goals:</li>
-                        </ul>
-                    </div>
-                    <div class="leftGroup">
-                        <h5>Frustrations and Pain Points</h5>
-                        <p>Some of the difficulties the user has with the product.</p>
-                        <ul>
-                            <li>UI, Interaction, User Experience;</li>
-                            <li>Dislikes relevant to the research;</li>
-                            <li>Disabilities;</li>
-                            <li>Unreliability of the product;</li>
-                            <li>Difficulties in completing tasks;</li>
-                            <li>Problems with the product: slowness, hard to use, no feedback provided;</li>
-                        </ul>
-                    </div>
-                </div>
-                <div itemprop="description" class="detailsRight">
-                    <h5>Detailed Description</h5>
-                    <p><strong>"A persona is a user archetype you can use to help guide decisions about product features, navigation, interactions, and even visual design." (Kim Goodwin, Cooper.com)</strong></p>
-                    <p>Regarding the persona type: Primary/Secondary/Negative/Supplemental/Served/Customer, these categories of personas are defined in <span itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/">About Face 3.0</a></span>                        by <span itemprop="author">Alan Cooper</span></span>.</p>
-                    <p>A few personal details regarding relationship to the application domain in which we will use the personas, work life, social life, teamwork etc.</p>
-                    <p><strong>This section should be structured as a story.</strong></p>
-                    <p>Regarding selecting goals it is recommended to be dived into:</p>
-                    <ul>
-                        <li>Practical Goals like: avoid meetings, being efficient;</li>
-                        <li>Personal Goals like: not feeling stupid (the product insults the user), getting an adequate amount of work done, having fun;</li>
-                        <li>Business Goals like: increasing student enrollment, getting good education.</li>
-                    </ul>
-                    <p>List any prior experience that is relevant to the persona </p>
-                    <ul>
-                        <li>Experience with certain applications, products;</li>
-                        <li>Frequency of use.</li>
-                    </ul>
-                    <h5>References</h5>
-                    <ul>
-                        <li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
-                        <li>An introduction to personas and <a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;</li>
-                        <li itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1" class="external-link" rel="nofollow">The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a></span>,
-                            <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;</li>
-                        <li>This version of Personas Template includes microdata markup using <a href="schema.org/">schema.org Schemas</a>.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personaScenarios">
-                <h5>Scenarios</h5>
-                <p>Develop and list a few scenarios in which your product is used (when, how and with whom it is used) by this persona. In developing these scenarios consider the Main points, Goals and Frustrations &amp; Pain Points. Describe the scenario
-                    in a few phrases and also establish a few end points. Images could be used to describe the scenarios. </p>
-            </div>
-            <div class="otherDetails">
-                <h5>Other Details</h5>
-                <p>Other details regarding this persona.</p>
-            </div>
-        </article>
-        <article itemscope itemtype="http://schema.org/Person" class="persona">
-            <div class="personaInfo">
-                <h3>Type: Primary/Secondary/Negative/Supplemental/Served/Customer</h3>
-                <figure>
-                    <img itemprop="image" src="http://placehold.it/150x150" alt="persona image" />
-                </figure>
-                <div class="personaBackground">
-                    <h4>Name: <span itemprop="givenName">FirstName</span> <span itemprop="familyName">LastName</span></h4>
-                    <h5>Background</h5>
-                    <ul>
-                        <li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1990-10-23">10/23/1990</time></li>
-                        <li><strong>Gender:</strong> <span itemprop="gender">Male/Female</span></li>
-                        <li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
-                        <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Organization Name</span>, <span itemprop="jobTitle">Engineer</span></li>
-                        <li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong> <span itemprop="name">Palo Alto High School</span> (if required)</li>
-                        <li><strong>Technology Level:</strong>(if required)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personaDetails">
-                <div class="detailsLeft">
-                    <div class="leftGroup">
-                        <h5>Main Points</h5>
-                        <p>Some points extracted from detailed description, that are specific for this persona and the reason we chose it. For example <strong>(phrases are recommended not just simple list of points)</strong>:</p>
-                        <ul>
-                            <li>Experience with certain products;</li>
-                            <li>Dislikes about certain aspects;</li>
-                            <li>Disabilities relevant to our research;</li>
-                            <li>Working environment;</li>
-                            <li>Social connections;</li>
-                            <li>The user's goals.</li>
-                        </ul>
-                    </div>
-                    <div class="leftGroup">
-                        <h5>Goals</h5>
-                        <p>Goals are the reasons users perform tasks, not the tasks.</p>
-                        <ul>
-                            <li>Practical Goals:</li>
-                            <li>Personal Goals:</li>
-                            <li>Business Goals:</li>
-                        </ul>
-                    </div>
-                    <div class="leftGroup">
-                        <h5>Frustrations and Pain Points</h5>
-                        <p>Some of the difficulties the user has with the product.</p>
-                        <ul>
-                            <li>UI, Interaction, User Experience;</li>
-                            <li>Dislikes relevant to the research;</li>
-                            <li>Disabilities;</li>
-                            <li>Unreliability of the product;</li>
-                            <li>Difficulties in completing tasks;</li>
-                            <li>Problems with the product: slowness, hard to use, no feedback provided;</li>
-                        </ul>
-                    </div>
-                </div>
-                <div itemprop="description" class="detailsRight">
-                    <h5>Detailed Description</h5>
-                    <p><strong>"A persona is a user archetype you can use to help guide decisions about product features, navigation, interactions, and even visual design." (Kim Goodwin, Cooper.com)</strong></p>
-                    <p>Regarding the persona type: Primary/Secondary/Negative/Supplemental/Served/Customer, these categories of personas are defined in <span itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/">About Face 3.0</a></span>                        by <span itemprop="author">Alan Cooper</span></span>.</p>
-                    <p>A few personal details regarding relationship to the application domain in which we will use the personas, work life, social life, teamwork etc.</p>
-                    <p><strong>This section should be structured as a story.</strong></p>
-                    <p>Regarding selecting goals it is recommended to be dived into:</p>
-                    <ul>
-                        <li>Practical Goals like: avoid meetings, being efficient;</li>
-                        <li>Personal Goals like: not feeling stupid (the product insults the user), getting an adequate amount of work done, having fun;</li>
-                        <li>Business Goals like: increasing student enrollment, getting good education.</li>
-                    </ul>
-                    <p>List any prior experience that is relevant to the persona </p>
-                    <ul>
-                        <li>Experience with certain applications, products;</li>
-                        <li>Frequency of use.</li>
-                    </ul>
-                    <h5>References</h5>
-                    <ul>
-                        <li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
-                        <li>An introduction to personas and <a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;</li>
-                        <li itemscope itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1" class="external-link" rel="nofollow">The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a></span>,
-                            <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;</li>
-                        <li>This version of Personas Template includes microdata markup using <a href="schema.org/">schema.org Schemas</a>.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="personaScenarios">
-                <h5>Scenarios</h5>
-                <p>Develop and list a few scenarios in which your product is used (when, how and with whom it is used) by this persona. In developing these scenarios consider the Main points, Goals and Frustrations &amp; Pain Points. Describe the scenario
-                    in a few phrases and also establish a few end points. Images could be used to describe the scenarios. </p>
-            </div>
-            <div class="otherDetails">
-                <h5>Other Details</h5>
-                <p>Other details regarding this persona.</p>
-            </div>
-        </article>
-    </section>
-
-    <footer id="footer">
-        <span id="license"><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></span>
-    </footer>
-</body>
-
+		<footer id="footer">
+			<span id="license"
+				><a href="http://creativecommons.org/licenses/by/3.0/"
+					><img
+						alt="Creative Commons License"
+						style="border-width: 0"
+						src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a
+			></span>
+		</footer>
+	</body>
 </html>
