@@ -60,15 +60,14 @@
                 <li class="toc-category"><a href="#system-features">System features</a></li>
                 <ol>
                   <li><a href="#feature-scan">Scanning</a></li>
-                  <li><a href="#feature-2">TODO</a></li>
+                  <li><a href="#feature-2">Friends</a></li>
+                  <li><a href="#feature-3">Allergies</a></li>
                 </ol>
                 <li class="toc-category"><a href="#other-nonf-requirements">Other nonfunctional requirements</a></li>
                 <ol>
                     <li><a href="#performance-requirements"> Performance requirements</a></li>
                     <li><a href="#safety-requirements"> Safety requirements</a></li>
-                    <li><a href="#security-requirements"> Security requirements</a></li>
                     <li><a href="#software-qa"> Software quality attributes</a></li>
-                    <li><a href="#business-rules"> Business rules</a></li>
                 </ol>
                 <li class="toc-category"><a href="#other-requirements">Other requirements</a></li>
                 <li class="toc-category">Appendix</li>
@@ -131,29 +130,28 @@
                 <li id="external-requirements" class="subcategory">External interface requirements</li>
                 <ol>
                     <li id="user-interfaces" class="subcategory">User interfaces</li>
+                    <p>The graphical user interface is designed to be as minimalist as possible, making it easier to use for any kind of person. The UI is consistent across multiple pages, it uses the same colors and rules (what is clickable or scrollable). All UI items follow a hierarchy of importance: most important items in a container are on the top with clear, big text, and less significant items are lower in the container body.</p>
                     <li id="software-interfaces" class="subcategory">Software interfaces</li>
-                    <!-- TODO: needed? -->
-                    <li id="communication-interfaces" class="subcategory">Communication interfaces</li>
+                    <p>The application is designed to work on smart phones (both Android and iOS), smart watches and fridges</p>
                 </ol>
 
                 <li id="system-features" class="subcategory">System features</li>
                 <ol>
                   <li id="feature-scan">The user can scan a product's barcode and learn about what other shops have that product in stock, its price, discounts if available, if there are any friends that have bought the product or if they recommend it. The user can then add the product to a shopping list to save it for later; afterwards, when the user enters a shop, they can select from the application the shop they entered and the application will search in the shopping lists any wanted products currently available in that shop.</li>
-                  <li id="feature-2"></li>
+                  <li id="feature-2">The user can add friends from other social networks (provided at login: Facebook or Twitter) or can manually add them. The user can then see what their friends are buying, what they are putting in their wishlists and shopping lists and the rating they gave to items. Based on this, the user can decide whether a product is worth buying or if they want to wishlist it and let the application come with different alternatives.</li>
+                  <li id="feature-3">The user has stated in their profile page that they are allergic to eggs and soy and would like to be recommended food items that do not contains these allergens. The application will take this into consideration whenever it recommends a new product and will warn the user if they scan or have wishlisted a product that contains these allergens.</li>
                 </ol>
 
                 <li id="other-nonf-requirements" class="subcategory">Other nonfunctional requirements</li>
                 <ol>
-                    <!-- TODO: needed? -->
                     <li id="performance-requirements" class="subcategory">Performance requirements</li>
-                    <!-- TODO: needed? -->
+                    <p>The application can run on basically any device, regardless of operating system version. It does not utilize much memory or computing power, as most of the data processing is done server side.</p>
                     <li id="safety-requirements" class="subcategory">Safety requirements</li>
-                    <!-- TODO: needed? -->
-                    <li id="security-requirements" class="subcategory">Security requirements</li>
+                    <p>The application is by no means a medical application, even though it can be used by diabetics or other diseases, if you are suffering, always consult your doctor first before trying new food.</p>
                     This platform uses a registration system and certain user data is stored (name, email address,
                     password). The searches will be safe from sql injections
                     <li id="software-qa" class="subcategory">Software quality attributes</li>
-                    <li id="business-rules" class="subcategory">Business rules</li>
+                    <p>The application meets all functional requirements, has been thoroughly tested with different usage scenarios. It is also easy to use, learn and understand. As it has a smartwatch interface (albeit minimal - only the wishlist screen is usable) and also a smart fridge interface, the application is very portable and can be used in a variety of scenarios.</p>
                 </ol>
 
                 <li id="other-requirements" class="subcategory">Other requirements</li>
